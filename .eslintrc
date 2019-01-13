@@ -9,9 +9,12 @@
         }
     },
     "env": {
-        "jest": true
+        "jest": true,
+        "browser": true
     },
     "rules": {
+        "react/jsx-uses-react": "error",
+        "react/jsx-uses-vars": "error",
         "prettier/prettier": "error",
         "no-console": "off",
         "react/jsx-filename-extension": [
@@ -34,5 +37,5 @@
         "Blob": true,
         "navigator": true
     },
-    "plugins": ["prettier"]
+    "plugins": ["prettier", "import", "react", "jsx-a11y"]
 }
