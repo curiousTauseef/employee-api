@@ -14,6 +14,16 @@ const mockData = [
 ]
 const mockSuccess = jest.fn().mockResolvedValue(mockData)
 
+const mockErrorMessage = 'There is an error with the api'
+
+const mockError = jest.fn().mockImplementation(() => {
+    try {
+        throw new Error(mockErrorMessage)
+    } catch (error) {
+        return Promise.resolve({ error: error.message })
+    }
+})
+
 describe('Server', () => {
     it('Should successfully respond to GET', async () => {
         app.set('getEmployees', mockSuccess)
@@ -22,9 +32,15 @@ describe('Server', () => {
         expect(mockSuccess).toHaveBeenCalled()
     })
 
-    it('Should return array of users', async () => {
+    it('Should return array of users if response ok', async () => {
         app.set('getEmployees', mockSuccess)
         const response = await request(app).get(getUrl)
         expect(response.body).toEqual(expect.arrayContaining(mockData))
+    })
+
+    it('Should return an error message if response not ok', async () => {
+        app.set('getEmployees', mockError)
+        const response = await request(app).get(getUrl)
+        expect(response.body.error).toEqual(mockErrorMessage)
     })
 })

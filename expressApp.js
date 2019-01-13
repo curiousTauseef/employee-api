@@ -7,9 +7,9 @@ const app = express()
 const url = 'http://hiring.rewardgateway.net/list'
 const headers = {
     method: 'GET',
-    // retries: 3,
-    // retryOn: [500],
-    // retryDelay: 1000,
+    retries: 3,
+    retryOn: [500],
+    retryDelay: 1000,
     headers: {
         Authorization: 'Basic aGFyZDpoYXJk',
         Accept: 'application/json',
@@ -17,7 +17,18 @@ const headers = {
 }
 
 app.set('getEmployees', async () => {
-    const response = await (await fetch(url, headers)).json()
+    const response = await fetch(url, headers)
+        .then(res => {
+            console.log(res.status, res.ok)
+            if (!res.ok) {
+                throw new Error('There seems to be a problem...')
+            }
+            return res.json()
+        })
+        .catch(err => {
+            console.log(err)
+            return { error: err.message }
+        })
     return response
 })
 
