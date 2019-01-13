@@ -16,10 +16,10 @@ const headers = {
     },
 }
 
-async function getEmployees() {
+app.set('getEmployees', async () => {
     const response = await (await fetch(url, headers)).json()
     return response
-}
+})
 
 app.use((_req, res, next) => {
     res.header('Access-Control-Allow-Origin', '*')
@@ -31,7 +31,7 @@ app.use((_req, res, next) => {
 })
 
 app.get('/api/employees', (_req, res) => {
-    getEmployees()
+    app.get('getEmployees')()
         .then(data => {
             res.send(data)
         })
