@@ -1,12 +1,43 @@
 /* eslint import/prefer-default-export: 0 */
 
 const express = require('express')
+const fetch = require('fetch-retry')
 
 const app = express()
+const url = 'http://hiring.rewardgateway.net/list'
+const headers = {
+    method: 'GET',
+    // retries: 3,
+    // retryOn: [500],
+    // retryDelay: 1000,
+    headers: {
+        Authorization: 'Basic aGFyZDpoYXJk',
+        Accept: 'application/json',
+    },
+}
 
-app.get('/api/employees', (request, response) => {
-    // should return list of employees
-    response.send('hello world')
+async function getEmployees() {
+    const response = await (await fetch(url, headers)).json()
+    return response
+}
+
+app.use((_req, res, next) => {
+    res.header('Access-Control-Allow-Origin', '*')
+    res.header(
+        'Access-Control-Allow-Headers',
+        'Origin, X-Requested-With, Content-Type, Accept'
+    )
+    next()
 })
 
-export { app }
+app.get('/api/employees', (_req, res) => {
+    getEmployees()
+        .then(data => {
+            res.send(data)
+        })
+        .catch(error => {
+            console.log(error)
+        })
+})
+
+module.exports = app
