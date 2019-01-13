@@ -44,10 +44,14 @@
             "enzyme-to-json/serializer"
         ]
     },
-    "precommit": "lint-staged",
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
     "lint-staged": {
         "src/*.{js,jsx}": [
-            "eslint src/ --fix",
+            "eslint --fix",
             "git add"
         ]
     }
