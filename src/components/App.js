@@ -23,7 +23,7 @@ const App = () => (
                     return (
                         <div>
                             {data.map(employee => (
-                                <p>{employee.name}</p>
+                                <p key={employee.uuid}>{employee.name}</p>
                             ))}
                         </div>
                     )

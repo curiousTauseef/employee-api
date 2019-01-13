@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Fetch /> Renders employee data and matches snapshot 1`] = `
+<Fetch>
+  <div>
+    <p
+      key="123"
+    >
+      Benjamin Shields
+    </p>
+    <p
+      key="456"
+    >
+      Gregory Landgraab
+    </p>
+    <p
+      key="789"
+    >
+      Bella Goth
+    </p>
+  </div>
+</Fetch>
+`;
