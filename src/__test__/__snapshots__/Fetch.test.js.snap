@@ -1,6 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Fetch /> Renders employee data and matches snapshot 1`] = `
+exports[`<Fetch /> Renders an error message when fetch fails and matches snapshot 1`] = `
+<Fetch>
+  <p>
+    There has been an error...
+  </p>
+</Fetch>
+`;
+
+exports[`<Fetch /> Renders employee data when successfully fetching and matches snapshot 1`] = `
 <Fetch>
   <div>
     <p
