@@ -1,9 +1,9 @@
 import React from 'react'
 import styled, { ThemeProvider, keyframes } from 'styled-components'
 import logo from '../logo.svg'
-// import '../App.css'
 import Fetch from './Fetch'
 import Employee from './Employee'
+import Pagination from './Pagination'
 import theme from '../theme'
 import GlobalStyle from './GlobalStyle'
 
@@ -73,6 +73,7 @@ const App = () => (
                         return (
                             <div>
                                 <p>Showing {data.length} results</p>
+                                <Pagination perPage={10} data={data} />
                                 <List>
                                     {data.map(employee => (
                                         <Employee
