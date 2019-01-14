@@ -7,9 +7,9 @@ const app = express()
 const url = 'http://hiring.rewardgateway.net/list'
 const headers = {
     method: 'GET',
-    // retries: 3,
-    // retryOn: [500],
-    // retryDelay: 1000,
+    retries: 3,
+    retryOn: [500],
+    retryDelay: 1000,
     headers: {
         Authorization: 'Basic aGFyZDpoYXJk',
         Accept: 'application/json',
