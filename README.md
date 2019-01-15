@@ -12,7 +12,7 @@ This application was built using:
 
 ## Installation
 
-Caveats: To run this project you need to have node.js and either yarn or npm installed. The frontend application uses the browser fetch API which is not supported on older browsers (e.g. Internet Explorer). Please ensure you use a modern browser to view the application (e.g. Chrome / Firefox).
+CAVEATS: To run this project you need to have `node.js` and either `yarn` or `npm` installed. The frontend application uses the browser fetch API which is not supported on older browsers (e.g. Internet Explorer). Please ensure you use a modern browser to view the application (e.g. Chrome / Firefox).
 
 Clone the project and from the root directory and run `yarn install` or `npm install`.
 
