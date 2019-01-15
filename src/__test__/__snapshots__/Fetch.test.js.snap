@@ -11,11 +11,6 @@ exports[`<Fetch /> Renders an error message when fetch fails and matches snapsho
 exports[`<Fetch /> Renders employee data when successfully fetching and matches snapshot 1`] = `
 <Fetch>
   <div>
-    <p>
-      Showing 
-      3
-       results
-    </p>
     <Pagination
       data={
         Array [
@@ -45,134 +40,262 @@ exports[`<Fetch /> Renders employee data when successfully fetching and matches 
           },
         ]
       }
-      perPage={100}
+      perPage={10}
     >
       <div>
-        <button
-          className="prev"
-          disabled={true}
-          onClick={[Function]}
-          type="button"
-        >
-          PREV
-        </button>
-        <span>
-          Showing page 
-          1
-           of 
-          1
-        </span>
-        <button
-          className="next"
-          disabled={true}
-          onClick={[Function]}
-          type="button"
-        >
-          NEXT
-        </button>
-        <div>
-          SOME CHILD THING 
-          1
-        </div>
-      </div>
-    </Pagination>
-    <styled.ul>
-      <StyledComponent
-        forwardedComponent={
-          Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "sc-bZQynM",
-              "isStatic": false,
-              "lastClassName": "ctKNap",
-              "rules": Array [
-                "
+        <styled.div>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-ifAKCX",
+                  "isStatic": false,
+                  "lastClassName": "eIHzkZ",
+                  "rules": Array [
+                    "
+    padding: 20px;
+    margin: 0 20px 20px 20px;
+    box-shadow: ",
+                    [Function],
+                    ";
+    background-color: ",
+                    [Function],
+                    ";
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .prev,
+    .next {
+        padding: 5px 10px;
+        font-size: 1rem;
+        border: 2px solid ",
+                    [Function],
+                    ";
+        background-color: ",
+                    [Function],
+                    ";
+        color: ",
+                    [Function],
+                    ";
+        cursor: pointer;
+
+        &:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+    }
+",
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-ifAKCX",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <div
+              className="sc-ifAKCX eIHzkZ"
+            >
+              <styled.p>
+                <StyledComponent
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-EHOje",
+                        "isStatic": true,
+                        "lastClassName": "iBOuDx",
+                        "rules": Array [
+                          "
+    flex-basis: 100%;
+",
+                        ],
+                      },
+                      "displayName": "styled.p",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "sc-EHOje",
+                      "target": "p",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                >
+                  <p
+                    className="sc-EHOje iBOuDx"
+                  >
+                    3
+                     Items Total
+                  </p>
+                </StyledComponent>
+              </styled.p>
+              <button
+                className="prev"
+                disabled={true}
+                onClick={[Function]}
+                type="button"
+              >
+                Prev
+              </button>
+              <styled.span>
+                <StyledComponent
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-bZQynM",
+                        "isStatic": true,
+                        "lastClassName": "dtVXUx",
+                        "rules": Array [
+                          "
+    font-size: 0.875rem;
+",
+                        ],
+                      },
+                      "displayName": "styled.span",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "sc-bZQynM",
+                      "target": "span",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                >
+                  <span
+                    className="sc-bZQynM dtVXUx"
+                  >
+                    Page 
+                    1
+                     of 
+                    1
+                  </span>
+                </StyledComponent>
+              </styled.span>
+              <button
+                className="next"
+                disabled={true}
+                onClick={[Function]}
+                type="button"
+              >
+                Next
+              </button>
+            </div>
+          </StyledComponent>
+        </styled.div>
+        <styled.ul>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-dnqmqq",
+                  "isStatic": false,
+                  "lastClassName": "lhPShm",
+                  "rules": Array [
+                    "
     list-style: none;
     padding: 0;
     margin: 0 20px 20px 20px;
     text-align: left;
     background-color: ",
-                [Function],
-                ";
+                    [Function],
+                    ";
     box-shadow: ",
-                [Function],
-                ";
+                    [Function],
+                    ";
 ",
-              ],
-            },
-            "displayName": "styled.ul",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "sc-bZQynM",
-            "target": "ul",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          }
-        }
-        forwardedRef={null}
-      >
-        <ul
-          className="sc-bZQynM ctKNap"
-        >
-          <Employee
-            employee={
-              Object {
-                "avatar": "http://httpstat.us/503",
-                "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                "company": "Streich PLC",
-                "name": "Benjamin Shields",
-                "title": "Real Estate Sales Agent",
-                "uuid": "123",
+                  ],
+                },
+                "displayName": "styled.ul",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-dnqmqq",
+                "target": "ul",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
               }
             }
-            key="123"
+            forwardedRef={null}
           >
-            <styled.li>
-              <StyledComponent
-                forwardedComponent={
+            <ul
+              className="sc-dnqmqq lhPShm"
+            >
+              <Employee
+                employee={
                   Object {
-                    "$$typeof": Symbol(react.forward_ref),
-                    "attrs": Array [],
-                    "componentStyle": ComponentStyle {
-                      "componentId": "sc-bdVaJa",
-                      "isStatic": true,
-                      "lastClassName": "jOsBxC",
-                      "rules": Array [
-                        "
+                    "avatar": "http://httpstat.us/503",
+                    "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                    "company": "Streich PLC",
+                    "name": "Benjamin Shields",
+                    "title": "Real Estate Sales Agent",
+                    "uuid": "123",
+                  }
+                }
+                key="123"
+              >
+                <styled.li>
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "sc-bdVaJa",
+                          "isStatic": true,
+                          "lastClassName": "jOsBxC",
+                          "rules": Array [
+                            "
     display: flex;
     padding: 20px 0 0 20px;
 ",
-                      ],
-                    },
-                    "displayName": "styled.li",
-                    "foldedComponentIds": Array [],
-                    "render": [Function],
-                    "styledComponentId": "sc-bdVaJa",
-                    "target": "li",
-                    "toString": [Function],
-                    "warnTooManyClasses": [Function],
-                    "withComponent": [Function],
-                  }
-                }
-                forwardedRef={null}
-              >
-                <li
-                  className="sc-bdVaJa jOsBxC"
-                >
-                  <styled.div>
-                    <StyledComponent
-                      forwardedComponent={
-                        Object {
-                          "$$typeof": Symbol(react.forward_ref),
-                          "attrs": Array [],
-                          "componentStyle": ComponentStyle {
-                            "componentId": "sc-bwzfXH",
-                            "isStatic": true,
-                            "lastClassName": "eIhTQf",
-                            "rules": Array [
-                              "
+                          ],
+                        },
+                        "displayName": "styled.li",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "sc-bdVaJa",
+                        "target": "li",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                  >
+                    <li
+                      className="sc-bdVaJa jOsBxC"
+                    >
+                      <styled.div>
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "sc-bwzfXH",
+                                "isStatic": true,
+                                "lastClassName": "eIhTQf",
+                                "rules": Array [
+                                  "
     border-radius: 50%;
     flex-shrink: 0;
     overflow: hidden;
@@ -180,178 +303,178 @@ exports[`<Fetch /> Renders employee data when successfully fetching and matches 
     height: 50px;
     object-fit: cover;
 ",
-                            ],
-                          },
-                          "displayName": "styled.div",
-                          "foldedComponentIds": Array [],
-                          "render": [Function],
-                          "styledComponentId": "sc-bwzfXH",
-                          "target": "div",
-                          "toString": [Function],
-                          "warnTooManyClasses": [Function],
-                          "withComponent": [Function],
-                        }
-                      }
-                      forwardedRef={null}
-                    >
-                      <div
-                        className="sc-bwzfXH eIhTQf"
-                      >
-                        <img
-                          alt="Benjamin Shields"
-                          onError={[Function]}
-                          src="http://httpstat.us/503"
-                          width="50px"
-                        />
-                      </div>
-                    </StyledComponent>
-                  </styled.div>
-                  <styled.div>
-                    <StyledComponent
-                      forwardedComponent={
-                        Object {
-                          "$$typeof": Symbol(react.forward_ref),
-                          "attrs": Array [],
-                          "componentStyle": ComponentStyle {
-                            "componentId": "sc-htpNat",
-                            "isStatic": false,
-                            "lastClassName": "iGfYlM",
-                            "rules": Array [
-                              "
+                                ],
+                              },
+                              "displayName": "styled.div",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "sc-bwzfXH",
+                              "target": "div",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                        >
+                          <div
+                            className="sc-bwzfXH eIhTQf"
+                          >
+                            <img
+                              alt="Benjamin Shields"
+                              onError={[Function]}
+                              src="http://httpstat.us/503"
+                              width="50px"
+                            />
+                          </div>
+                        </StyledComponent>
+                      </styled.div>
+                      <styled.div>
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "sc-htpNat",
+                                "isStatic": false,
+                                "lastClassName": "iGfYlM",
+                                "rules": Array [
+                                  "
     margin-left: 20px;
     border-bottom: 1px solid ",
-                              [Function],
-                              ";
+                                  [Function],
+                                  ";
     flex-grow: 1;
     padding: 0 20px 20px 0;
 ",
-                            ],
-                          },
-                          "displayName": "styled.div",
-                          "foldedComponentIds": Array [],
-                          "render": [Function],
-                          "styledComponentId": "sc-htpNat",
-                          "target": "div",
-                          "toString": [Function],
-                          "warnTooManyClasses": [Function],
-                          "withComponent": [Function],
-                        }
-                      }
-                      forwardedRef={null}
-                    >
-                      <div
-                        className="sc-htpNat iGfYlM"
-                      >
-                        <h2>
-                          Benjamin Shields
-                        </h2>
-                        <p>
-                          Real Estate Sales Agent
-                           at 
-                          Streich PLC
-                        </p>
-                        <styled.p>
-                          <StyledComponent
-                            forwardedComponent={
-                              Object {
-                                "$$typeof": Symbol(react.forward_ref),
-                                "attrs": Array [],
-                                "componentStyle": ComponentStyle {
-                                  "componentId": "sc-bxivhb",
-                                  "isStatic": false,
-                                  "lastClassName": "hJmXeG",
-                                  "rules": Array [
-                                    "
+                                ],
+                              },
+                              "displayName": "styled.div",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "sc-htpNat",
+                              "target": "div",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                        >
+                          <div
+                            className="sc-htpNat iGfYlM"
+                          >
+                            <h2>
+                              Benjamin Shields
+                            </h2>
+                            <p>
+                              Real Estate Sales Agent
+                               at 
+                              Streich PLC
+                            </p>
+                            <styled.p>
+                              <StyledComponent
+                                forwardedComponent={
+                                  Object {
+                                    "$$typeof": Symbol(react.forward_ref),
+                                    "attrs": Array [],
+                                    "componentStyle": ComponentStyle {
+                                      "componentId": "sc-bxivhb",
+                                      "isStatic": false,
+                                      "lastClassName": "hJmXeG",
+                                      "rules": Array [
+                                        "
     font-size: 0.875rem;
     color: ",
-                                    [Function],
-                                    ";
+                                        [Function],
+                                        ";
 ",
-                                  ],
-                                },
-                                "displayName": "styled.p",
-                                "foldedComponentIds": Array [],
-                                "render": [Function],
-                                "styledComponentId": "sc-bxivhb",
-                                "target": "p",
-                                "toString": [Function],
-                                "warnTooManyClasses": [Function],
-                                "withComponent": [Function],
-                              }
-                            }
-                            forwardedRef={null}
-                          >
-                            <p
-                              className="sc-bxivhb hJmXeG"
-                            >
-                              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            </p>
-                          </StyledComponent>
-                        </styled.p>
-                      </div>
-                    </StyledComponent>
-                  </styled.div>
-                </li>
-              </StyledComponent>
-            </styled.li>
-          </Employee>
-          <Employee
-            employee={
-              Object {
-                "avatar": 0,
-                "bio": "<p>Etiam ut mi sed neque elementum rhoncus.</p>",
-                "company": "Landgraab Industries",
-                "name": "Gregory Landgraab",
-                "title": "CEO",
-                "uuid": "456",
-              }
-            }
-            key="456"
-          >
-            <styled.li>
-              <StyledComponent
-                forwardedComponent={
+                                      ],
+                                    },
+                                    "displayName": "styled.p",
+                                    "foldedComponentIds": Array [],
+                                    "render": [Function],
+                                    "styledComponentId": "sc-bxivhb",
+                                    "target": "p",
+                                    "toString": [Function],
+                                    "warnTooManyClasses": [Function],
+                                    "withComponent": [Function],
+                                  }
+                                }
+                                forwardedRef={null}
+                              >
+                                <p
+                                  className="sc-bxivhb hJmXeG"
+                                >
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </p>
+                              </StyledComponent>
+                            </styled.p>
+                          </div>
+                        </StyledComponent>
+                      </styled.div>
+                    </li>
+                  </StyledComponent>
+                </styled.li>
+              </Employee>
+              <Employee
+                employee={
                   Object {
-                    "$$typeof": Symbol(react.forward_ref),
-                    "attrs": Array [],
-                    "componentStyle": ComponentStyle {
-                      "componentId": "sc-bdVaJa",
-                      "isStatic": true,
-                      "lastClassName": "jOsBxC",
-                      "rules": Array [
-                        "
+                    "avatar": 0,
+                    "bio": "<p>Etiam ut mi sed neque elementum rhoncus.</p>",
+                    "company": "Landgraab Industries",
+                    "name": "Gregory Landgraab",
+                    "title": "CEO",
+                    "uuid": "456",
+                  }
+                }
+                key="456"
+              >
+                <styled.li>
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "sc-bdVaJa",
+                          "isStatic": true,
+                          "lastClassName": "jOsBxC",
+                          "rules": Array [
+                            "
     display: flex;
     padding: 20px 0 0 20px;
 ",
-                      ],
-                    },
-                    "displayName": "styled.li",
-                    "foldedComponentIds": Array [],
-                    "render": [Function],
-                    "styledComponentId": "sc-bdVaJa",
-                    "target": "li",
-                    "toString": [Function],
-                    "warnTooManyClasses": [Function],
-                    "withComponent": [Function],
-                  }
-                }
-                forwardedRef={null}
-              >
-                <li
-                  className="sc-bdVaJa jOsBxC"
-                >
-                  <styled.div>
-                    <StyledComponent
-                      forwardedComponent={
-                        Object {
-                          "$$typeof": Symbol(react.forward_ref),
-                          "attrs": Array [],
-                          "componentStyle": ComponentStyle {
-                            "componentId": "sc-bwzfXH",
-                            "isStatic": true,
-                            "lastClassName": "eIhTQf",
-                            "rules": Array [
-                              "
+                          ],
+                        },
+                        "displayName": "styled.li",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "sc-bdVaJa",
+                        "target": "li",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                  >
+                    <li
+                      className="sc-bdVaJa jOsBxC"
+                    >
+                      <styled.div>
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "sc-bwzfXH",
+                                "isStatic": true,
+                                "lastClassName": "eIhTQf",
+                                "rules": Array [
+                                  "
     border-radius: 50%;
     flex-shrink: 0;
     overflow: hidden;
@@ -359,178 +482,178 @@ exports[`<Fetch /> Renders employee data when successfully fetching and matches 
     height: 50px;
     object-fit: cover;
 ",
-                            ],
-                          },
-                          "displayName": "styled.div",
-                          "foldedComponentIds": Array [],
-                          "render": [Function],
-                          "styledComponentId": "sc-bwzfXH",
-                          "target": "div",
-                          "toString": [Function],
-                          "warnTooManyClasses": [Function],
-                          "withComponent": [Function],
-                        }
-                      }
-                      forwardedRef={null}
-                    >
-                      <div
-                        className="sc-bwzfXH eIhTQf"
-                      >
-                        <img
-                          alt="Gregory Landgraab"
-                          onError={[Function]}
-                          src={0}
-                          width="50px"
-                        />
-                      </div>
-                    </StyledComponent>
-                  </styled.div>
-                  <styled.div>
-                    <StyledComponent
-                      forwardedComponent={
-                        Object {
-                          "$$typeof": Symbol(react.forward_ref),
-                          "attrs": Array [],
-                          "componentStyle": ComponentStyle {
-                            "componentId": "sc-htpNat",
-                            "isStatic": false,
-                            "lastClassName": "iGfYlM",
-                            "rules": Array [
-                              "
+                                ],
+                              },
+                              "displayName": "styled.div",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "sc-bwzfXH",
+                              "target": "div",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                        >
+                          <div
+                            className="sc-bwzfXH eIhTQf"
+                          >
+                            <img
+                              alt="Gregory Landgraab"
+                              onError={[Function]}
+                              src={0}
+                              width="50px"
+                            />
+                          </div>
+                        </StyledComponent>
+                      </styled.div>
+                      <styled.div>
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "sc-htpNat",
+                                "isStatic": false,
+                                "lastClassName": "iGfYlM",
+                                "rules": Array [
+                                  "
     margin-left: 20px;
     border-bottom: 1px solid ",
-                              [Function],
-                              ";
+                                  [Function],
+                                  ";
     flex-grow: 1;
     padding: 0 20px 20px 0;
 ",
-                            ],
-                          },
-                          "displayName": "styled.div",
-                          "foldedComponentIds": Array [],
-                          "render": [Function],
-                          "styledComponentId": "sc-htpNat",
-                          "target": "div",
-                          "toString": [Function],
-                          "warnTooManyClasses": [Function],
-                          "withComponent": [Function],
-                        }
-                      }
-                      forwardedRef={null}
-                    >
-                      <div
-                        className="sc-htpNat iGfYlM"
-                      >
-                        <h2>
-                          Gregory Landgraab
-                        </h2>
-                        <p>
-                          CEO
-                           at 
-                          Landgraab Industries
-                        </p>
-                        <styled.p>
-                          <StyledComponent
-                            forwardedComponent={
-                              Object {
-                                "$$typeof": Symbol(react.forward_ref),
-                                "attrs": Array [],
-                                "componentStyle": ComponentStyle {
-                                  "componentId": "sc-bxivhb",
-                                  "isStatic": false,
-                                  "lastClassName": "hJmXeG",
-                                  "rules": Array [
-                                    "
+                                ],
+                              },
+                              "displayName": "styled.div",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "sc-htpNat",
+                              "target": "div",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                        >
+                          <div
+                            className="sc-htpNat iGfYlM"
+                          >
+                            <h2>
+                              Gregory Landgraab
+                            </h2>
+                            <p>
+                              CEO
+                               at 
+                              Landgraab Industries
+                            </p>
+                            <styled.p>
+                              <StyledComponent
+                                forwardedComponent={
+                                  Object {
+                                    "$$typeof": Symbol(react.forward_ref),
+                                    "attrs": Array [],
+                                    "componentStyle": ComponentStyle {
+                                      "componentId": "sc-bxivhb",
+                                      "isStatic": false,
+                                      "lastClassName": "hJmXeG",
+                                      "rules": Array [
+                                        "
     font-size: 0.875rem;
     color: ",
-                                    [Function],
-                                    ";
+                                        [Function],
+                                        ";
 ",
-                                  ],
-                                },
-                                "displayName": "styled.p",
-                                "foldedComponentIds": Array [],
-                                "render": [Function],
-                                "styledComponentId": "sc-bxivhb",
-                                "target": "p",
-                                "toString": [Function],
-                                "warnTooManyClasses": [Function],
-                                "withComponent": [Function],
-                              }
-                            }
-                            forwardedRef={null}
-                          >
-                            <p
-                              className="sc-bxivhb hJmXeG"
-                            >
-                              Etiam ut mi sed neque elementum rhoncus.
-                            </p>
-                          </StyledComponent>
-                        </styled.p>
-                      </div>
-                    </StyledComponent>
-                  </styled.div>
-                </li>
-              </StyledComponent>
-            </styled.li>
-          </Employee>
-          <Employee
-            employee={
-              Object {
-                "avatar": "http://placekitten.com/50/50",
-                "bio": "<pre>Ut eget dui eleifend, pretium dui at, posuere dui.",
-                "company": "Streich PLC",
-                "name": "Bella Goth",
-                "title": "Test Subject",
-                "uuid": "789",
-              }
-            }
-            key="789"
-          >
-            <styled.li>
-              <StyledComponent
-                forwardedComponent={
+                                      ],
+                                    },
+                                    "displayName": "styled.p",
+                                    "foldedComponentIds": Array [],
+                                    "render": [Function],
+                                    "styledComponentId": "sc-bxivhb",
+                                    "target": "p",
+                                    "toString": [Function],
+                                    "warnTooManyClasses": [Function],
+                                    "withComponent": [Function],
+                                  }
+                                }
+                                forwardedRef={null}
+                              >
+                                <p
+                                  className="sc-bxivhb hJmXeG"
+                                >
+                                  Etiam ut mi sed neque elementum rhoncus.
+                                </p>
+                              </StyledComponent>
+                            </styled.p>
+                          </div>
+                        </StyledComponent>
+                      </styled.div>
+                    </li>
+                  </StyledComponent>
+                </styled.li>
+              </Employee>
+              <Employee
+                employee={
                   Object {
-                    "$$typeof": Symbol(react.forward_ref),
-                    "attrs": Array [],
-                    "componentStyle": ComponentStyle {
-                      "componentId": "sc-bdVaJa",
-                      "isStatic": true,
-                      "lastClassName": "jOsBxC",
-                      "rules": Array [
-                        "
+                    "avatar": "http://placekitten.com/50/50",
+                    "bio": "<pre>Ut eget dui eleifend, pretium dui at, posuere dui.",
+                    "company": "Streich PLC",
+                    "name": "Bella Goth",
+                    "title": "Test Subject",
+                    "uuid": "789",
+                  }
+                }
+                key="789"
+              >
+                <styled.li>
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "sc-bdVaJa",
+                          "isStatic": true,
+                          "lastClassName": "jOsBxC",
+                          "rules": Array [
+                            "
     display: flex;
     padding: 20px 0 0 20px;
 ",
-                      ],
-                    },
-                    "displayName": "styled.li",
-                    "foldedComponentIds": Array [],
-                    "render": [Function],
-                    "styledComponentId": "sc-bdVaJa",
-                    "target": "li",
-                    "toString": [Function],
-                    "warnTooManyClasses": [Function],
-                    "withComponent": [Function],
-                  }
-                }
-                forwardedRef={null}
-              >
-                <li
-                  className="sc-bdVaJa jOsBxC"
-                >
-                  <styled.div>
-                    <StyledComponent
-                      forwardedComponent={
-                        Object {
-                          "$$typeof": Symbol(react.forward_ref),
-                          "attrs": Array [],
-                          "componentStyle": ComponentStyle {
-                            "componentId": "sc-bwzfXH",
-                            "isStatic": true,
-                            "lastClassName": "eIhTQf",
-                            "rules": Array [
-                              "
+                          ],
+                        },
+                        "displayName": "styled.li",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "sc-bdVaJa",
+                        "target": "li",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                  >
+                    <li
+                      className="sc-bdVaJa jOsBxC"
+                    >
+                      <styled.div>
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "sc-bwzfXH",
+                                "isStatic": true,
+                                "lastClassName": "eIhTQf",
+                                "rules": Array [
+                                  "
     border-radius: 50%;
     flex-shrink: 0;
     overflow: hidden;
@@ -538,124 +661,126 @@ exports[`<Fetch /> Renders employee data when successfully fetching and matches 
     height: 50px;
     object-fit: cover;
 ",
-                            ],
-                          },
-                          "displayName": "styled.div",
-                          "foldedComponentIds": Array [],
-                          "render": [Function],
-                          "styledComponentId": "sc-bwzfXH",
-                          "target": "div",
-                          "toString": [Function],
-                          "warnTooManyClasses": [Function],
-                          "withComponent": [Function],
-                        }
-                      }
-                      forwardedRef={null}
-                    >
-                      <div
-                        className="sc-bwzfXH eIhTQf"
-                      >
-                        <img
-                          alt="Bella Goth"
-                          onError={[Function]}
-                          src="http://placekitten.com/50/50"
-                          width="50px"
-                        />
-                      </div>
-                    </StyledComponent>
-                  </styled.div>
-                  <styled.div>
-                    <StyledComponent
-                      forwardedComponent={
-                        Object {
-                          "$$typeof": Symbol(react.forward_ref),
-                          "attrs": Array [],
-                          "componentStyle": ComponentStyle {
-                            "componentId": "sc-htpNat",
-                            "isStatic": false,
-                            "lastClassName": "iGfYlM",
-                            "rules": Array [
-                              "
+                                ],
+                              },
+                              "displayName": "styled.div",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "sc-bwzfXH",
+                              "target": "div",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                        >
+                          <div
+                            className="sc-bwzfXH eIhTQf"
+                          >
+                            <img
+                              alt="Bella Goth"
+                              onError={[Function]}
+                              src="http://placekitten.com/50/50"
+                              width="50px"
+                            />
+                          </div>
+                        </StyledComponent>
+                      </styled.div>
+                      <styled.div>
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "sc-htpNat",
+                                "isStatic": false,
+                                "lastClassName": "iGfYlM",
+                                "rules": Array [
+                                  "
     margin-left: 20px;
     border-bottom: 1px solid ",
-                              [Function],
-                              ";
+                                  [Function],
+                                  ";
     flex-grow: 1;
     padding: 0 20px 20px 0;
 ",
-                            ],
-                          },
-                          "displayName": "styled.div",
-                          "foldedComponentIds": Array [],
-                          "render": [Function],
-                          "styledComponentId": "sc-htpNat",
-                          "target": "div",
-                          "toString": [Function],
-                          "warnTooManyClasses": [Function],
-                          "withComponent": [Function],
-                        }
-                      }
-                      forwardedRef={null}
-                    >
-                      <div
-                        className="sc-htpNat iGfYlM"
-                      >
-                        <h2>
-                          Bella Goth
-                        </h2>
-                        <p>
-                          Test Subject
-                           at 
-                          Streich PLC
-                        </p>
-                        <styled.p>
-                          <StyledComponent
-                            forwardedComponent={
-                              Object {
-                                "$$typeof": Symbol(react.forward_ref),
-                                "attrs": Array [],
-                                "componentStyle": ComponentStyle {
-                                  "componentId": "sc-bxivhb",
-                                  "isStatic": false,
-                                  "lastClassName": "hJmXeG",
-                                  "rules": Array [
-                                    "
+                                ],
+                              },
+                              "displayName": "styled.div",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "sc-htpNat",
+                              "target": "div",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                        >
+                          <div
+                            className="sc-htpNat iGfYlM"
+                          >
+                            <h2>
+                              Bella Goth
+                            </h2>
+                            <p>
+                              Test Subject
+                               at 
+                              Streich PLC
+                            </p>
+                            <styled.p>
+                              <StyledComponent
+                                forwardedComponent={
+                                  Object {
+                                    "$$typeof": Symbol(react.forward_ref),
+                                    "attrs": Array [],
+                                    "componentStyle": ComponentStyle {
+                                      "componentId": "sc-bxivhb",
+                                      "isStatic": false,
+                                      "lastClassName": "hJmXeG",
+                                      "rules": Array [
+                                        "
     font-size: 0.875rem;
     color: ",
-                                    [Function],
-                                    ";
+                                        [Function],
+                                        ";
 ",
-                                  ],
-                                },
-                                "displayName": "styled.p",
-                                "foldedComponentIds": Array [],
-                                "render": [Function],
-                                "styledComponentId": "sc-bxivhb",
-                                "target": "p",
-                                "toString": [Function],
-                                "warnTooManyClasses": [Function],
-                                "withComponent": [Function],
-                              }
-                            }
-                            forwardedRef={null}
-                          >
-                            <p
-                              className="sc-bxivhb hJmXeG"
-                            >
-                              Ut eget dui eleifend, pretium dui at, posuere dui.
-                            </p>
-                          </StyledComponent>
-                        </styled.p>
-                      </div>
-                    </StyledComponent>
-                  </styled.div>
-                </li>
-              </StyledComponent>
-            </styled.li>
-          </Employee>
-        </ul>
-      </StyledComponent>
-    </styled.ul>
+                                      ],
+                                    },
+                                    "displayName": "styled.p",
+                                    "foldedComponentIds": Array [],
+                                    "render": [Function],
+                                    "styledComponentId": "sc-bxivhb",
+                                    "target": "p",
+                                    "toString": [Function],
+                                    "warnTooManyClasses": [Function],
+                                    "withComponent": [Function],
+                                  }
+                                }
+                                forwardedRef={null}
+                              >
+                                <p
+                                  className="sc-bxivhb hJmXeG"
+                                >
+                                  Ut eget dui eleifend, pretium dui at, posuere dui.
+                                </p>
+                              </StyledComponent>
+                            </styled.p>
+                          </div>
+                        </StyledComponent>
+                      </styled.div>
+                    </li>
+                  </StyledComponent>
+                </styled.li>
+              </Employee>
+            </ul>
+          </StyledComponent>
+        </styled.ul>
+      </div>
+    </Pagination>
   </div>
 </Fetch>
 `;

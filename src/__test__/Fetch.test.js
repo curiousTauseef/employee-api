@@ -30,7 +30,6 @@ describe('<Fetch />', () => {
         await wait()
         wrapper.update()
         const fetchComponent = wrapper.find(Fetch)
-        console.log(fetchComponent.debug())
         expect(global.fetch).toHaveBeenCalled()
 
         expect(fetchComponent).toMatchSnapshot()

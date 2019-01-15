@@ -72,22 +72,18 @@ const App = () => (
                         if (error) return <p>{error}</p>
                         return (
                             <div>
-                                <p>Showing {data.length} results</p>
-                                <Pagination data={data} perPage={100}>
-                                    {({ currentPage }) => (
-                                        <div>
-                                            SOME CHILD THING {currentPage}
-                                        </div>
+                                <Pagination data={data} perPage={10}>
+                                    {({ pageData }) => (
+                                        <List>
+                                            {pageData.map(employee => (
+                                                <Employee
+                                                    key={employee.uuid}
+                                                    employee={employee}
+                                                />
+                                            ))}
+                                        </List>
                                     )}
                                 </Pagination>
-                                <List>
-                                    {data.map(employee => (
-                                        <Employee
-                                            key={employee.uuid}
-                                            employee={employee}
-                                        />
-                                    ))}
-                                </List>
                             </div>
                         )
                     }}
