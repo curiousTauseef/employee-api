@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
@@ -20,10 +20,18 @@ const Pager = styled.div`
         background-color: ${props => props.theme.white};
         color: ${props => props.theme.blue};
         cursor: pointer;
+        transition: background-color 0.15s linear;
 
         &:disabled {
             opacity: 0.5;
             cursor: not-allowed;
+        }
+
+        &:not(:disabled) {
+            &:hover {
+                background-color: ${props => props.theme.blue}
+                color: ${props => props.theme.white}
+            }
         }
     }
 `
@@ -60,28 +68,18 @@ export default class Pagination extends Component {
     next = () => {
         const { currentPage, pageCount } = this.state
         if (currentPage < pageCount) {
-            this.setState(
-                prevState => ({
-                    currentPage: prevState.currentPage + 1,
-                }),
-                () => {
-                    console.log(currentPage)
-                }
-            )
+            this.setState(prevState => ({
+                currentPage: prevState.currentPage + 1,
+            }))
         }
     }
 
     prev = () => {
         const { currentPage } = this.state
         if (currentPage > 1) {
-            this.setState(
-                prevState => ({
-                    currentPage: prevState.currentPage - 1,
-                }),
-                () => {
-                    console.log(currentPage)
-                }
-            )
+            this.setState(prevState => ({
+                currentPage: prevState.currentPage - 1,
+            }))
         }
     }
 
@@ -97,7 +95,7 @@ export default class Pagination extends Component {
         const { currentPage, pageCount } = this.state
         const { children, data } = this.props
         return (
-            <div>
+            <Fragment>
                 <Pager>
                     <Total>{data.length} Items Total</Total>
                     <button
@@ -106,7 +104,7 @@ export default class Pagination extends Component {
                         onClick={this.prev}
                         disabled={currentPage <= 1}
                     >
-                        Prev
+                        Previous
                     </button>
                     <PageCount>
                         Page {currentPage} of {pageCount}
@@ -122,7 +120,7 @@ export default class Pagination extends Component {
                 </Pager>
 
                 {children({ pageData: this.paginate() })}
-            </div>
+            </Fragment>
         )
     }
 }

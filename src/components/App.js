@@ -5,7 +5,7 @@ import Fetch from './Fetch'
 import Employee from './Employee'
 import Pagination from './Pagination'
 import theme from '../theme'
-import GlobalStyle from './GlobalStyle'
+import GlobalStyle from '../styles/GlobalStyle'
 
 const Wrapper = styled.div`
     text-align: center;
@@ -58,7 +58,7 @@ const App = () => (
                 <h1>Employee List</h1>
             </Header>
             <Main>
-                <Fetch>
+                <Fetch endpoint="http://localhost:8000/api/employees">
                     {({ data, error, loading }) => {
                         if (loading)
                             return (
@@ -94,19 +94,3 @@ const App = () => (
 )
 
 export default App
-
-// <Pagination data={data}>
-// {({
-//     perPage,
-//     pageCount,
-//     currentPage,
-//     next,
-// }) => (
-//     <div>
-//         <p>perPage: {perPage}</p>
-//         <p>pageCount: {pageCount}</p>
-//         <p>currentPage: {currentPage}</p>
-//         <button onClick={next}>NEXT</button>
-//     </div>
-// )}
-// </Pagination>

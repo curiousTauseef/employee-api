@@ -1,10 +1,15 @@
 import { Component } from 'react'
+import PropTypes from 'prop-types'
 
 export default class Fetch extends Component {
     state = {
         error: null,
         data: [],
         loading: true,
+    }
+
+    static propTypes = {
+        endpoint: PropTypes.string.isRequired,
     }
 
     componentDidMount() {
@@ -23,8 +28,8 @@ export default class Fetch extends Component {
     }
 
     fetchEmployees = async () => {
-        const url = 'http://localhost:8000/api/employees'
-        const response = await (await fetch(url)).json()
+        const { endpoint } = this.props
+        const response = await (await fetch(endpoint)).json()
         return response
     }
 

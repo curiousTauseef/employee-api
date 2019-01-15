@@ -1,13 +1,11 @@
 import React from 'react'
-import { mount } from 'enzyme'
-// import wait from 'waait'
-// import App from '../components/App'
+import { shallow } from 'enzyme'
 import Pagination from '../components/Pagination'
 import { mockData } from '../lib/testUtils'
 
 describe('<Pagination />', () => {
     it('Should disable prev on the first page', () => {
-        const wrapper = mount(
+        const wrapper = shallow(
             <Pagination data={mockData} perPage={1}>
                 {() => null}
             </Pagination>
@@ -16,7 +14,7 @@ describe('<Pagination />', () => {
     })
 
     it('Should disable next on the last page', () => {
-        const wrapper = mount(
+        const wrapper = shallow(
             <Pagination data={mockData} perPage={1}>
                 {() => null}
             </Pagination>
@@ -27,7 +25,7 @@ describe('<Pagination />', () => {
     })
 
     it('Should enable all buttons on a middle page', () => {
-        const wrapper = mount(
+        const wrapper = shallow(
             <Pagination data={mockData} perPage={1}>
                 {() => null}
             </Pagination>

@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Employee/> Should render an employee 1`] = `
+<styled.li>
+  <styled.div>
+    <img
+      alt="Benjamin Shields"
+      onError={[Function]}
+      src="http://httpstat.us/503"
+      width="50px"
+    />
+  </styled.div>
+  <styled.div>
+    <h2>
+      Benjamin Shields
+    </h2>
+    <p>
+      Real Estate Sales Agent
+       at 
+      Streich PLC
+    </p>
+    <styled.p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    </styled.p>
+  </styled.div>
+</styled.li>
+`;
