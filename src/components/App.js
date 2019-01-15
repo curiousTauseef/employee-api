@@ -18,7 +18,7 @@ const Header = styled.header`
 const List = styled.ul`
     list-style: none;
     padding: 0;
-    margin: 0 20px 20px 20px;
+    margin: 0 20px 40px 20px;
     text-align: left;
     background-color: ${props => props.theme.white};
     box-shadow: ${props => props.theme.boxShadow};
