@@ -1,7 +1,6 @@
 ## Brief
 
-The challenge was to consume the api documented on http://hiring.rewardgateway.net/docs/. The task was to consume the data this API generates and output it as a list of
-employees. The end point sometimes will fail and that’s on purpose.
+The challenge was to consume the API documented on http://hiring.rewardgateway.net/docs/ and output a list of employees in JavaScript. The end point sometimes will fail and that’s on purpose.
 
 ## Stack
 
@@ -23,15 +22,11 @@ You can view the frontend in your browser on [http://localhost:3000](http://loca
 
 ## Testing
 
-Tests were written using [Jest]('https://jestjs.io/') and [Enzyme](https://airbnb.io/enzyme/). You can run the tests using the command `yarn test` or `npm test`
-You can run the application tests
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Tests were written using [Jest]('https://jestjs.io/') and [Enzyme](https://airbnb.io/enzyme/). You can run the tests using the command `yarn test` or `npm test` and then selecting the test options.
 
 ## Approach
 
-There were two main challenges I had when completing the challenge.
+There were two main challenges I faced when completing this task.
 
 ### 1. Cross-Origin Resource Sharing
 
@@ -45,6 +40,8 @@ To handle the API randomly failing, I setup my node server to auto retry and fet
 
 ## Further Improvements
 
-If I had more time or in a production environment, I either save the API response to a database or cache it, and setup a cron job to update the database or cache regularly. Then when a user visits the website the saved/cached data would be served rather than requesting the data again from the API each time.
+If I had more time to improve this application or in a production environment, I would save the API response to a database or cache it. Then I would setup a cron job to update the database or cache regularly. Depending on the API implementation it may alternatively be possible to setup a continuous integration task, for example a webhook to trigger the backend server to automatically fetch and save the data when the employee records change.
 
-I would also move the pagination to the backend as requesting all items (1000) is not necessary. This can be handled by passing query params so the server only returns a subset of the data.
+Then when a user visits the website the saved/cached data would be served rather than requesting the data again from the API each time.
+
+With the data saved/cached, I would also move the pagination to the backend as requesting all items (1000) is not necessary. This can be handled by passing query params so the server only returns a subset of the data to be rendered.
