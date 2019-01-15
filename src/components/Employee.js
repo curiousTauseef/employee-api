@@ -62,7 +62,7 @@ const Employee = props => {
 Employee.propTypes = {
     employee: PropTypes.shape({
         uuid: PropTypes.string,
-        avatar: PropTypes.string,
+        avatar: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
         bio: PropTypes.string,
         company: PropTypes.string,
         title: PropTypes.string,

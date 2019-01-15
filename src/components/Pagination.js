@@ -2,7 +2,9 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
 export default class Pagination extends Component {
-    state = {}
+    state = {
+        currentPage: 1,
+    }
 
     static propTypes = {
         /* eslint-disable react/no-unused-prop-types */
@@ -20,7 +22,60 @@ export default class Pagination extends Component {
         }
     }
 
+    next = () => {
+        const { currentPage, pageCount } = this.state
+        if (currentPage < pageCount) {
+            this.setState(
+                prevState => ({
+                    currentPage: prevState.currentPage + 1,
+                }),
+                () => {
+                    console.log(currentPage)
+                }
+            )
+        }
+    }
+
+    prev = () => {
+        const { currentPage } = this.state
+        if (currentPage > 1) {
+            this.setState(
+                prevState => ({
+                    currentPage: prevState.currentPage - 1,
+                }),
+                () => {
+                    console.log(currentPage)
+                }
+            )
+        }
+    }
+
     render() {
-        return <div>Pagination</div>
+        const { currentPage, pageCount } = this.state
+        const { children } = this.props
+        return (
+            <div>
+                <button
+                    className="prev"
+                    type="button"
+                    onClick={this.prev}
+                    disabled={currentPage <= 1}
+                >
+                    PREV
+                </button>
+                <span>
+                    Showing page {currentPage} of {pageCount}
+                </span>
+                <button
+                    className="next"
+                    type="button"
+                    onClick={this.next}
+                    disabled={currentPage >= pageCount}
+                >
+                    NEXT
+                </button>
+                {children({ ...this.state })}
+            </div>
+        )
     }
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import styled, { ThemeProvider, keyframes } from 'styled-components'
-import logo from '../logo.svg'
+import logo from '../img/logo.svg'
 import Fetch from './Fetch'
 import Employee from './Employee'
 import Pagination from './Pagination'
@@ -73,7 +73,13 @@ const App = () => (
                         return (
                             <div>
                                 <p>Showing {data.length} results</p>
-                                <Pagination perPage={10} data={data} />
+                                <Pagination data={data} perPage={100}>
+                                    {({ currentPage }) => (
+                                        <div>
+                                            SOME CHILD THING {currentPage}
+                                        </div>
+                                    )}
+                                </Pagination>
                                 <List>
                                     {data.map(employee => (
                                         <Employee
@@ -92,3 +98,19 @@ const App = () => (
 )
 
 export default App
+
+// <Pagination data={data}>
+// {({
+//     perPage,
+//     pageCount,
+//     currentPage,
+//     next,
+// }) => (
+//     <div>
+//         <p>perPage: {perPage}</p>
+//         <p>pageCount: {pageCount}</p>
+//         <p>currentPage: {currentPage}</p>
+//         <button onClick={next}>NEXT</button>
+//     </div>
+// )}
+// </Pagination>

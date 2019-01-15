@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App/> renders without crashing 1`] = `
+<ThemeProvider
+  theme={
+    Object {
+      "black": "#000000",
+      "blue": "#0073b1",
+      "boxShadow": "0 0 0 1px rgba(0,0,0,.15), 0 2px 3px rgba(0,0,0,.2)",
+      "grey": "#e2e2e2",
+      "greyBg": "#f6f6f6",
+      "greyTxt": "#888888",
+      "white": "#ffffff",
+    }
+  }
+>
+  <styled.div>
+    <GlobalStyleComponent />
+    <styled.header>
+      <h1>
+        Employee List
+      </h1>
+    </styled.header>
+    <styled.main>
+      <Fetch>
+        <Component />
+      </Fetch>
+    </styled.main>
+  </styled.div>
+</ThemeProvider>
+`;
