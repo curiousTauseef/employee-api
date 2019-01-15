@@ -208,12 +208,12 @@ exports[`<Fetch /> Renders employee data when successfully fetching and matches 
                 "componentStyle": ComponentStyle {
                   "componentId": "sc-dnqmqq",
                   "isStatic": false,
-                  "lastClassName": "lhPShm",
+                  "lastClassName": "hzocnr",
                   "rules": Array [
                     "
     list-style: none;
     padding: 0;
-    margin: 0 20px 20px 20px;
+    margin: 0 20px 40px 20px;
     text-align: left;
     background-color: ",
                     [Function],
@@ -237,7 +237,7 @@ exports[`<Fetch /> Renders employee data when successfully fetching and matches 
             forwardedRef={null}
           >
             <ul
-              className="sc-dnqmqq lhPShm"
+              className="sc-dnqmqq hzocnr"
             >
               <Employee
                 employee={
