@@ -4,7 +4,7 @@ import logo from '../img/logo.svg'
 import Fetch from './Fetch'
 import Employee from './Employee'
 import Pagination from './Pagination'
-import theme from '../theme'
+import theme from '../styles/theme'
 import GlobalStyle from '../styles/GlobalStyle'
 
 const Wrapper = styled.div`
