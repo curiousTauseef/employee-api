@@ -19,7 +19,6 @@ const headers = {
 app.set('getEmployees', async () => {
     const response = await fetch(url, headers)
         .then(res => {
-            console.log(res.status, res.ok)
             if (!res.ok) {
                 throw new Error('There seems to be a problem...')
             }
